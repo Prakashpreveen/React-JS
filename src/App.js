@@ -21,8 +21,8 @@ import "./App.css";
 // import Inline from "./Components/Inline";
 // import "./appStyles.css";
 // import styles from "./appStyles.module.css";
-import { Practice, Practice1, Practice2, Practice3 } from "./Styles/Practice";
-
+// import { Practice, Practice1, Practice2, Practice3 } from "./Styles/Practice";
+import FormClass from "./Components/FormHandling/Form";
 function App() {
   return (
     <div className="App">
@@ -68,12 +68,13 @@ function App() {
         //   <Inline />
         //   <h1 className="error">Error</h1>
         //   <h1 className={styles.success}>Success</h1>
-        <div>
-          <Practice />
-          <Practice1 />
-          <Practice2 />
-          <Practice3 />
-        </div>
+        // <div>
+        //   <Practice />
+        //   <Practice1 />
+        //   <Practice2 />
+        //   <Practice3 />
+        // </div>
+        <FormClass />
         // </div>
         // </div>
         // </div>
