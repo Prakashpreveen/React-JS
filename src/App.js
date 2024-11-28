@@ -23,15 +23,17 @@ import "./App.css";
 // import styles from "./appStyles.module.css";
 // import { Practice, Practice1, Practice2, Practice3 } from "./Styles/Practice";
 // import FormClass from "./Components/FormHandling/Form";
-import LifecycleA from "./Components/LifeCycleComponents/MountingLifecycleA";
-import UpdateLifecycleA from "./Components/LifeCycleComponents/UpdatingLifecycleA";
+// import LifecycleA from "./Components/LifeCycleComponents/MountingLifecycleA";
+// import UpdateLifecycleA from "./Components/LifeCycleComponents/UpdatingLifecycleA";
+import FragmentTable from "./Components/Fragment/FragmentTable";
 
 function App() {
   return (
     <div className="App">
       {
         // <LifecycleA />
-        <UpdateLifecycleA />
+        // <UpdateLifecycleA />
+        <FragmentTable />
 
         //   <div>
         //     <div className = "BASIC FUNCTION AND CLASS">
