@@ -7,9 +7,10 @@ function Portal1() {
   const ClickHandler = () => {
     SetOpen(!IsOpen);
   };
+
   return (
     <div>
-      <h1>PARENT PORTAL</h1>
+      <h1>Parent Root</h1>
       <button onClick={ClickHandler}>{IsOpen ? "Close" : "Open"} Portal</button>
       {IsOpen && <Portal2 props={ClickHandler} />}
     </div>
