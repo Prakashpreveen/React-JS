@@ -3,14 +3,18 @@ import logo from "./logo.svg";
 import "./App.css";
 
 // import ParentComp from "./Components/PureComponent/ParentComp";
-import RefsDemo from "./Components/RefsDemo";
+// import RefsDemo from "./Components/RefComponents/RefsDemo";
+// import ChildRef from "./Components/RefComponents/ChildRef";
+import P from "./Components/RefComponents/P";
 
 function App() {
   return (
     <div className="App">
-      {/* <ParentComp /> */}
-      {/* <ParentComp /> */}
+      {/* <ParentComp />
+      <ParentComp />
       <RefsDemo />
+      <ChildRef /> */}
+      <P />
     </div>
   );
 }
