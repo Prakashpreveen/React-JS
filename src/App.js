@@ -6,6 +6,7 @@ import "./App.css";
 // import RefsDemo from "./Components/RefComponents/RefsDemo";
 // import ChildRef from "./Components/RefComponents/ChildRef";
 import P from "./Components/RefComponents/P";
+import ForwardRefParent from "./Components/RefComponents/ForwardRefParent";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <RefsDemo />
       <ChildRef /> */}
       <P />
+      <ForwardRefParent />
     </div>
   );
 }
