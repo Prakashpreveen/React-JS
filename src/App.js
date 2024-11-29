@@ -4,24 +4,31 @@ import "./App.css";
 
 // import PortalDemo from "./Components/PortalDemo";
 // import Portal1 from "./Components/Portals/Portal1";
-import Hero from "./Components/ErrorBoundaryFolder/Hero";
-import ErrorBoundary from "./Components/ErrorBoundaryFolder/ErrorBoundary";
+// import Hero from "./Components/ErrorBoundaryFolder/Hero";
+// import ErrorBoundary from "./Components/ErrorBoundaryFolder/ErrorBoundary";
+import HoverCounter from "./Components/HigherOrderComponent/HoverCounter";
+import ClickCounter from "./Components/HigherOrderComponent/ClickCounter";
+
 function App() {
   return (
     <div className="App">
       {
         // <PortalDemo />
         // <Portal1 />
+        // <div>
+        //   <ErrorBoundary>
+        //     <Hero heroname={"Batman"} />
+        //   </ErrorBoundary>
+        //   <ErrorBoundary>
+        //     <Hero heroname={"superman"} />
+        //   </ErrorBoundary>
+        //   <ErrorBoundary>
+        //     <Hero heroname={"Joker"} />
+        //   </ErrorBoundary>
+        // </div>
         <div>
-          <ErrorBoundary>
-            <Hero heroname={"Batman"} />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <Hero heroname={"superman"} />
-          </ErrorBoundary>
-          <ErrorBoundary>
-            <Hero heroname={"Joker"} />
-          </ErrorBoundary>
+          <HoverCounter />
+          <ClickCounter />
         </div>
       }
     </div>
