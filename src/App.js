@@ -9,9 +9,11 @@ import "./App.css";
 // import ClickCounter from "./Components/HigherOrderComponent/ClickCounter";
 // import HoverCounter from "./Components/HigherOrderComponent/HoverCounter";
 // import RenderCounter from "./Components/RenderPropsComponent/RenderCounter";
-import ClickCounterTwo from "./Components/RenderPropsComponent/ClickCounterTwo";
-import HoverCounterTwo from "./Components/RenderPropsComponent/HoverCounterTwo";
-import RenderCounter from "./Components/RenderPropsComponent/RenderCounter";
+// import ClickCounterTwo from "./Components/RenderPropsComponent/ClickCounterTwo";
+// import HoverCounterTwo from "./Components/RenderPropsComponent/HoverCounterTwo";
+// import RenderCounter from "./Components/RenderPropsComponent/RenderCounter";
+import ComponentC from "./Components/ContextAPI/ComponentC";
+import { UserProvider } from "./Components/ContextAPI/ContextDemo";
 
 function App() {
   return (
@@ -37,23 +39,30 @@ function App() {
         <div>
           {/* <ClickCounterTwo />
           <HoverCounterTwo /> */}
-          <RenderCounter>
-            {(count, IncrementedCount) => (
-              <ClickCounterTwo
-                count={count}
-                IncrementedCount={IncrementedCount}
-              />
-            )}
-          </RenderCounter>
+          {/* <div className="RENDER PROPS">
+            <RenderCounter>
+              {(count, IncrementedCount) => (
+                <ClickCounterTwo
+                  count={count}
+                  IncrementedCount={IncrementedCount}
+                />
+              )}
+            </RenderCounter>
 
-          <RenderCounter>
-            {(count, IncrementedCount) => (
-              <HoverCounterTwo
-                count={count}
-                IncrementedCount={IncrementedCount}
-              />
-            )}
-          </RenderCounter>
+            <RenderCounter>
+              {(count, IncrementedCount) => (
+                <HoverCounterTwo
+                  count={count}
+                  IncrementedCount={IncrementedCount}
+                />
+              )}
+            </RenderCounter>
+          </div> */}
+          <div className="CONTEXT">
+            <UserProvider value="Prakash">
+              <ComponentC />
+            </UserProvider>
+          </div>
         </div>
       }
     </div>
