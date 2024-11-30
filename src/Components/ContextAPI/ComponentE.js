@@ -3,7 +3,11 @@ import ComponentF from "./ComponentF";
 
 export class ComponentE extends Component {
   render() {
-    return <ComponentF />;
+    return (
+      <div>
+        <ComponentF />
+      </div>
+    );
   }
 }
 
