@@ -1,14 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 import UpdatedFunction from "./HOCwithCounter";
 
-//Using Functional Component
-function ClickCounter(props) {
-  const { count, Incremented } = props;
-  return (
-    <div>
-      <button onClick={Incremented}>Clicked {count} Times</button>
-    </div>
-  );
+export class ClickCounter extends Component {
+  render() {
+    const { Incremented, count, name } = this.props;
+    return (
+      <div>
+        <button onClick={Incremented}>
+          {name} Clicked {count} Times
+        </button>
+      </div>
+    );
+  }
 }
 
-export default UpdatedFunction(ClickCounter);
+export default UpdatedFunction(ClickCounter, 5);

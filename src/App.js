@@ -6,8 +6,12 @@ import "./App.css";
 // import Portal1 from "./Components/Portals/Portal1";
 // import Hero from "./Components/ErrorBoundaryFolder/Hero";
 // import ErrorBoundary from "./Components/ErrorBoundaryFolder/ErrorBoundary";
-import ClickCounter from "./Components/HigherOrderComponent/ClickCounter";
-import HoverCounter from "./Components/HigherOrderComponent/HoverCounter";
+// import ClickCounter from "./Components/HigherOrderComponent/ClickCounter";
+// import HoverCounter from "./Components/HigherOrderComponent/HoverCounter";
+// import RenderCounter from "./Components/RenderPropsComponent/RenderCounter";
+import ClickCounterTwo from "./Components/RenderPropsComponent/ClickCounterTwo";
+import HoverCounterTwo from "./Components/RenderPropsComponent/HoverCounterTwo";
+import RenderCounter from "./Components/RenderPropsComponent/RenderCounter";
 
 function App() {
   return (
@@ -26,9 +30,30 @@ function App() {
         //     <Hero heroname={"Joker"} />
         //   </ErrorBoundary>
         // </div>
+        // <div className="HOC">
+        //   <ClickCounter name={"prakash"} />
+        //   <HoverCounter name={"prakash"} />
+        // </div>
         <div>
-          <ClickCounter />
-          <HoverCounter />
+          {/* <ClickCounterTwo />
+          <HoverCounterTwo /> */}
+          <RenderCounter>
+            {(count, IncrementedCount) => (
+              <ClickCounterTwo
+                count={count}
+                IncrementedCount={IncrementedCount}
+              />
+            )}
+          </RenderCounter>
+
+          <RenderCounter>
+            {(count, IncrementedCount) => (
+              <HoverCounterTwo
+                count={count}
+                IncrementedCount={IncrementedCount}
+              />
+            )}
+          </RenderCounter>
         </div>
       }
     </div>

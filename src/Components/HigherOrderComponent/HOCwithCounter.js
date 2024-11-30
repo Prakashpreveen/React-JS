@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-const UpdatedFunction = (OriginalFunction) => {
+const UpdatedFunction = (OriginalFunction, Increment) => {
   class NewFunction extends Component {
     constructor() {
       super();
@@ -10,7 +10,7 @@ const UpdatedFunction = (OriginalFunction) => {
     }
     Incremented = () => {
       this.setState((prevState) => {
-        return { count: prevState.count + 1 };
+        return { count: prevState.count + Increment };
       });
     };
     render() {
@@ -18,6 +18,7 @@ const UpdatedFunction = (OriginalFunction) => {
         <OriginalFunction
           count={this.state.count}
           Incremented={this.Incremented}
+          {...this.props} //Spread Operator if gave any props in App.js
         />
       );
     }
