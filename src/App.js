@@ -6,8 +6,8 @@ import "./App.css";
 // import Portal1 from "./Components/Portals/Portal1";
 // import Hero from "./Components/ErrorBoundaryFolder/Hero";
 // import ErrorBoundary from "./Components/ErrorBoundaryFolder/ErrorBoundary";
-import HoverCounter from "./Components/HigherOrderComponent/HoverCounter";
 import ClickCounter from "./Components/HigherOrderComponent/ClickCounter";
+import HoverCounter from "./Components/HigherOrderComponent/HoverCounter";
 
 function App() {
   return (
@@ -27,8 +27,8 @@ function App() {
         //   </ErrorBoundary>
         // </div>
         <div>
-          <HoverCounter />
           <ClickCounter />
+          <HoverCounter />
         </div>
       }
     </div>

@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import UpdatedFunction from "./HOCwithCounter";
 
-class HoverCounter extends Component {
+//Using Class Component
+export class HoverCounter extends Component {
   render() {
     const { count, Incremented } = this.props;
     return (
       <div>
-        <h1 onMouseOver={Incremented}>Hovered {count} Times</h1>
+        <h2 onMouseOver={Incremented}>Hoverd {count} Times</h2>
       </div>
     );
   }
